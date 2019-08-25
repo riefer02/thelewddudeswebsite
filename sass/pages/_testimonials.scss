@@ -1,0 +1,9 @@
+.section-testimonials {
+	padding: 5.5rem 0;
+	position: relative;
+	background-color: $color-grey-light-1;
+
+	@include respond(tab-port) {
+		padding:10rem 0;
+	}
+}
