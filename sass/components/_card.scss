@@ -1,0 +1,274 @@
+.card {
+	//FUNCTIONALITY
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 52rem;
+
+	&__side {
+		height: 52rem;
+		transition: all 0.8s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+		&--front {
+			background-color: $color-white;
+		}
+
+		&--back {
+			transform: rotateY(180deg);
+
+			&-1 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-red,
+					$color-blue
+				);
+			}
+
+			&-2 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-blue,
+					$color-yellow
+				);
+			}
+
+			&-3 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-yellow,
+					$color-blue
+				);
+			}
+		}
+	}
+
+	&:hover &__side--front {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0deg);
+	}
+
+	// FRONT-SIDE STYLING
+	&__picture {
+		background-size: cover;
+		height: 23rem;
+		background-blend-mode: screen;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+
+		&--1 {
+			background-image: linear-gradient(
+					to right bottom,
+					$color-red,
+					$color-blue
+				),
+				url(../img/tld-5-1x.jpeg);
+
+			@media (min-resolution: 192dpi) and (min-width: 37.5em),
+				(-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+				(min-width: 125em) {
+				background-image: linear-gradient(
+						to right bottom,
+						$color-red,
+						$color-blue
+					),
+					url(../img/tld-5-2x.jpeg);
+			}
+		}
+
+		&--2 {
+			background-image: linear-gradient(
+					to right bottom,
+					$color-blue,
+					$color-yellow
+				),
+				url(../img/tld-6-1x.jpeg);
+
+			@media (min-resolution: 192dpi) and (min-width: 37.5em),
+				(-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+				(min-width: 125em) {
+				background-image: linear-gradient(
+						to right bottom,
+						$color-red,
+						$color-blue
+					),
+					url(../img/tld-6-2x.jpeg);
+			}
+		}
+
+		&--3 {
+			background-image: linear-gradient(
+					to right bottom,
+					$color-yellow,
+					$color-blue
+				),
+				url(../img/tld-7-1x.jpeg);
+
+			@media (min-resolution: 192dpi) and (min-width: 37.5em),
+				(-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+				(min-width: 125em) {
+				background-image: linear-gradient(
+						to right bottom,
+						$color-red,
+						$color-blue
+					),
+					url(../img/tld-7-2x.jpeg);
+			}
+		}
+	}
+
+	&__heading {
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: right;
+		color: $color-white;
+		position: absolute;
+		top: 12rem;
+		right: 2rem;
+		width: 75%;
+	}
+
+	&__heading-span {
+		padding: 1rem 1.5rem;
+		-webkit-box-decoration-break: clone;
+		box-decoration-break: clone;
+
+		&--1 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-red, 0.85),
+				rgba($color-blue, 0.85)
+			);
+		}
+
+		&--2 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-blue, 0.85),
+				rgba($color-yellow, 0.85)
+			);
+		}
+
+		&--3 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba($color-yellow, 0.85),
+				rgba($color-blue, 0.85)
+			);
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+
+		ul {
+			list-style: none;
+			width: 80%;
+			margin: 0 auto;
+
+			li {
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid $color-grey-light-2;
+				}
+			}
+		}
+	}
+
+	//FRONT SIDE STYLING
+	&__cta {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		text-align: center;
+	}
+
+	&__price-box {
+		text-align: center;
+		margin-bottom: 8rem;
+		color: $color-white;
+	}
+
+	&__price-only {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+
+	&__price-value {
+		font-size: 6rem;
+		font-weight: 100;
+	}
+
+	//@include respond(tab-port) {
+	@media only screen and (max-width: 56.25em), only screen and (hover: none) {
+		height: auto;
+		border-radius: 3px;
+		background-color: $color-white;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+		&__side {
+			height: auto;
+			position: relative;
+			box-shadow: none;
+
+			&--back {
+				clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+				transform: rotateY(0deg);
+			}
+		}
+
+		&:hover &__side--front {
+			transform: rotateY(0deg);
+		}
+
+		&__details {
+			padding: 1rem 3rem;
+		}
+
+		// FRONT-SIDE STYLING
+
+		//FRONT SIDE STYLING
+		&__cta {
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0);
+			width: 100%;
+			padding: 7rem 4rem 4rem 4rem;
+		}
+
+		&__price-box {
+			margin-bottom: 3rem;
+		}
+
+		&__price-value {
+			font-size: 4rem;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: $color-grey-dark;
+	}
+}

@@ -1,0 +1,79 @@
+$primary: #ef6565;
+$grey: #99a5ab;
+$black: #323232;
+$white: #ffffff;
+$green: #2ecc71;
+
+$spacing-unit: 40px;
+$quarter-spacing-unit: $spacing-unit / 4;
+$half-spacing-unit: $spacing-unit / 2;
+$double-spacing-unit: $spacing-unit * 2;
+
+$z-lvl-1: 1000;
+$z-lvl-2: 2000;
+
+@mixin loading-spinner(
+    $activeColor: $primary,
+    $selector: "&::before",
+    $time: 1.5s
+) {
+    @keyframes spinner {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+    }
+
+    animation-play-state: running;
+    opacity: 1;
+    position: relative;
+
+    &.-loaded {
+        // animation-play-state: paused;
+        opacity: 0;
+        transition: opacity linear 0.1s;
+    }
+
+    #{$selector} {
+        animation: $time linear infinite spinner;
+        animation-play-state: inherit;
+        border: solid 3px $white;
+        border-bottom-color: #{$activeColor};
+        border-radius: 50%;
+        content: "";
+        height: $spacing-unit;
+        left: 50%;
+        opacity: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: $spacing-unit;
+        will-change: transform;
+    }
+}
+
+.loading-spinner {
+    @include loading-spinner;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: $double-spacing-unit;
+    padding: $spacing-unit $spacing-unit 0;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+#loading-wrap {
+    visibility: hidden;
+}

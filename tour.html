@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <title>The Lewd Dudes | Tour</title>
+  </head>
+  <body>
+    <!--  <div id="loading" class="loading-spinner js-loading-spinner" role="alert" aria-live="assertive">
+         <p class="vh js-loading-spinner-copy">Content is loading...</p>
+    </div> -->
+    <div id="content-wrap">
+      <div class="navigation">
+        <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link"
+                ><span></span>Home</a
+              >
+            </li>
+            <!-- <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Videos</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Biography</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Booking</a></li> -->
+            <li class="navigation__item">
+              <a href="tour.html" class="navigation__link"><span></span>Tour</a>
+            </li>
+            <li class="navigation__item">
+              <a href="press.html" class="navigation__link"
+                ><span></span>Press</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                href="https://open.spotify.com/artist/65dA1HHvGplN8EcCk4YZOQ"
+                class="navigation__link"
+                ><span></span>Music</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a
+                href="https:/www.instagram.com/thelewddudes"
+                class="navigation__link"
+                ><span></span>Instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="section-tour">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">The Lewd Dudes World Tour</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">Tour Dates</h3>
+
+            <table id="event-table" class="tour-table">
+              <thead class="tour-table__head">
+                <tr class="tour-table__row">
+                  <th scope="col" class="tour-table__head-item">Location</th>
+                  <th scope="col" class="tour-table__head-item">Date</th>
+                  <th scope="col" class="tour-table__head-item">Time</th>
+                  <th scope="col" class="tour-table__head-item">
+                    Ticket Price
+                  </th>
+                  <th scope="col" class="tour-table__head-item">Details</th>
+                </tr>
+              </thead>
+
+              <!-- Table footer -->
+
+              <!--
+                  <tfoot class="tour-table__foot">
+                      <tr class="tour-table__row">
+                          <th scope="col" class="tour-table__head-item">Location</th>
+                          <th scope="col" class="tour-table__head-item">Date</th>
+                          <th scope="col" class="tour-table__head-item">Time</th>
+                          <th scope="col" class="tour-table__head-item">Ticket Price</th>
+                          <th scope="col" class="tour-table__head-item">Details</th>
+                      </tr>
+                  </tfoot>
+-->
+
+              <!-- Table body -->
+
+              <tbody class="tour-table__body">
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Empire Control Room — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">December 13th, 2019</td>
+                  <td class="tour-table__data-item">8:30 PM</td>
+                  <td class="tour-table__data-item">$5</td>
+                  <td class="tour-table__data-item">Malbec Album Release</td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Historic Scoot Inn — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">December 27th, 2019</td>
+                  <td class="tour-table__data-item">9:00 PM</td>
+                  <td class="tour-table__data-item">Free</td>
+                  <td class="tour-table__data-item">w/ Willy McGee & Anime</td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    White Oak Music Hall — Houston, TX
+                  </td>
+                  <td class="tour-table__data-item">January 3rd, 2020</td>
+                  <td class="tour-table__data-item">8:30 PM</td>
+                  <td class="tour-table__data-item">$5</td>
+                  <td class="tour-table__data-item">w/ Forever Miles</td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Tolbert's — Grapevine, TX
+                  </td>
+                  <td class="tour-table__data-item">January 10th, 2020</td>
+                  <td class="tour-table__data-item">10:00 PM</td>
+                  <td class="tour-table__data-item">Free</td>
+                  <td class="tour-table__data-item">w/ Nic and the Congress</td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    The Armoury — Dallas, TX
+                  </td>
+                  <td class="tour-table__data-item">January 11th, 2020</td>
+                  <td class="tour-table__data-item">10:00 PM</td>
+                  <td class="tour-table__data-item">Free</td>
+                  <td class="tour-table__data-item">Historic Deep Ellum</td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">The Parish — Austin, TX</td>
+                  <td class="tour-table__data-item">January 31st, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item">$10</td>
+                  <td class="tour-table__data-item">
+                    w/ The West Coast Feed & Tarry and the Towns
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Hotel Vegas — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">February 17th, 2020</td>
+                  <td class="tour-table__data-item">10:00 PM</td>
+                  <td class="tour-table__data-item">$5</td>
+                  <td class="tour-table__data-item">
+                    Presidents Day Show w/ Solar Moth &
+                    <a
+                      href="https://coffinfits.bandcamp.com/"
+                      target="_blank"
+                      class="tour-table__link"
+                      >The Coffin Fits</a
+                    >
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Stubb's BBQ — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">March 12th, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://stubbsindoor.frontgatetickets.com/event/dfjpvi80fg73rmaz?fbclid=IwAR3Ehi__A7mxKDDZ0xwEN5SLSDYwNfOOvw58PMP6977eHmx8oTAlLO5Pik0"
+                      >Tickets
+                    </a>
+                  </td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://facebook.com/events/s/101x-xposure-presents-otis-the/2756144801140594/?ti=icl"
+                      >St. Baldrick's Charity for Childhood Cancer</a
+                    >
+                    <br />w/
+                    <a
+                      class="tour-table__link"
+                      href="https://otisthedestroyer.bandcamp.com/"
+                      target="_blank"
+                      >Otis the Destroyer</a
+                    >
+                    &
+                    <a
+                      class="tour-table__link"
+                      target="_blank"
+                      href="https://www.facebook.com/heyheybabynodoubttribute/"
+                      >Hey Hey Baby</a
+                    >
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Wanderlust Wine Co. — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">March 13th, 2020</td>
+                  <td class="tour-table__data-item">7:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://wanderlustwine.com/"
+                      target="_blank"
+                      >SXSW Opening Wine Party -- 610 N Interstate Hwy 35
+                      Austin, Texas 78701</a
+                    >
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">Lit Lounge — Austin, TX</td>
+                  <td class="tour-table__data-item">March 17th, 2020</td>
+                  <td class="tour-table__data-item">6:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://www.facebook.com/events/644697619423009/"
+                      target="_blank"
+                      >St. Patrick's Day 6th Street Celebration -- 215 E. 6th
+                      Street Austin, Texas 78701</a
+                    >
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    SXSW House Party — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">March 20th, 2020</td>
+                  <td class="tour-table__data-item">6:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    7009 Langston Drive, 78723 -- w/ The Opportunity, The
+                    Richard Parker Triad, Sleeve Cannon, Blue Tongue,
+                    Allepakcok, Atlas Engine
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Wanderlust Wine Co. — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">March 21st, 2020</td>
+                  <td class="tour-table__data-item">7:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://wanderlustwine.com/"
+                      target="_blank"
+                      >SXSW Weekends Wine Party -- 610 N Interstate Hwy 35
+                      Austin, Texas 78701</a
+                    >
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    The Bang Bang Bar — San Antonio, TX
+                  </td>
+                  <td class="tour-table__data-item">March 22th, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    w/
+                    <a
+                      class="tour-table__link"
+                      href="https://soundcloud.com/forevermiles"
+                      target="_blank"
+                      >Forever Miles</a
+                    >
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Hotel Vegas — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">April 22th, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item"><b>CANCELED</b></td>
+                  <td class="tour-table__data-item">
+                    w/
+                    <a
+                      class="tour-table__link"
+                      href="https://soundcloud.com/forevermiles"
+                      target="_blank"
+                      >Forever Miles</a
+                    >
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Darwin's Pub — Houston, TX
+                  </td>
+                  <td class="tour-table__data-item">May 9th, 2020</td>
+                  <td class="tour-table__data-item">3:00 PM</td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://www.havocwagon.com/threebs"
+                      ><b>CANCELED</b></a
+                    >
+                  </td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://www.havocwagon.com/threebs"
+                    >
+                      Three B's Music Festival Crawfish Boil
+                    </a>
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Farout Lounge — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">October 8th, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://bummertownband.bandcamp.com/"
+                      ><b>w/ Bummertown</b></a
+                    >
+                  </td>
+                  <td class="tour-table__data-item">
+                    Benefit for friend Lee Ahlbrandt
+                  </td>
+                </tr>
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    Wanderlust Wine Bar — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">October 31st, 2020</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://wanderlustwine.com/"
+                      ><b>Explore the Lust</b></a
+                    >
+                  </td>
+                  <td class="tour-table__data-item">Halloween Bash!</td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="http://www.thefaroutaustin.com/"
+                      >Far Out Lounge</a
+                    >
+                    — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">February 5th, 2021</td>
+                  <td class="tour-table__data-item">8:00 PM</td>
+                  <td class="tour-table__data-item">$10</td>
+                  <td class="tour-table__data-item">
+                    w/ Bummertown and
+                    <a
+                      class="tour-table__link"
+                      href="https://open.spotify.com/artist/7ELhIreXLSNDqlqnk3b0WM"
+                      target="_blank"
+                    >
+                      Forever Miles
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="tour-table__row">
+                  <td class="tour-table__data-item">
+                    <a
+                      class="tour-table__link"
+                      href="https://independencebrewing.com/"
+                      >Independence Brewing Company</a
+                    >
+                    — Austin, TX
+                  </td>
+                  <td class="tour-table__data-item">February 27th, 2021</td>
+                  <td class="tour-table__data-item">7:00 PM</td>
+                  <td class="tour-table__data-item"><a
+                    class="tour-table__link"
+                    href="https://www.eventbrite.com/e/billy-king-and-the-bad-bad-bad-the-lewd-dudes-independence-brewing-co-tickets-140936991335"
+                    >SOLD OUT</a
+                  ></td>
+                  <td class="tour-table__data-item">
+                    
+                    <a
+                      class="tour-table__link"
+                      href="https://billykingandthebadbadbad.com/"
+                      target="_blank"
+                    >w/ Billy King and the Bad Bad Bad</a>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <a href="index.html" class="btn-text">Return Home &rarr; </a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                srcset="img/tld-12-1x.jpg 300w, img/tld-12-2x.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="photo-1"
+                class="composition__photo composition__photo--p1"
+                src="img/tld-12-2x.jpg"
+              />
+              <img
+                srcset="img/tld-6-1x.jpeg 300w, img/tld-6-2x.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="photo-2"
+                class="composition__photo composition__photo--p2"
+                src="img/tld-6-2x.jpg"
+              />
+              <img
+                srcset="img/tld-20-1x.jpg 300w, img/tld-20-2x.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="photo-3"
+                class="composition__photo composition__photo--p3"
+                src="img/tld-20-2x.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__logo-box">
+          <picture class="footer__logo">
+            <source
+              srcset="img/spinaltext.png 1x, img/spinaltext.png 2x"
+              media="(max-width: 37.5em)"
+            />
+            <img
+              srcset="img/spinaltext.png 1x, img/spinaltext.png 2x"
+              src="img/spinaltext.png 2x"
+              alt="The Lewd Dudes Logo"
+            />
+          </picture>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="index.html" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="press.html" class="footer__link">Press</a>
+                </li>
+                <li class="footer__item">
+                  <a href="tour.html" class="footer__link">Tour</a>
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="https://open.spotify.com/artist/65dA1HHvGplN8EcCk4YZOQ"
+                    class="footer__link"
+                    >Music</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="https://www.instagram.com/thelewddudes/"
+                    class="footer__link"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <p class="footer__copyright">
+              Booking:
+              <a
+                class="footer__link"
+                href="mailto:thelewddudes@gmail.com?Subject=Boooking%20TLD"
+                target="_top"
+                >thelewddudes@gmail.com</a
+              >
+              <br />
+              <br />Built by
+              <a href="http://www.andrewriefenstahl.com/" class="footer__link"
+                >Andrew Riefenstahl</a
+              >
+              for The Lewd Dudes
+              <a href="#" class="footer__link">Rief Productions, LLC</a>.
+              Copyright &copy; The Lewd Dudes <br />
+              Inspired by Jonas Schmedtmann. Cover Image by
+              <a class="footer__link" href="https://redridinghoodproductions.co"
+                >Red Riding Hood Productions</a
+              >. <br />
+              Photography by
+              <a class="footer__link" href="http://rileysklar.com"
+                >Riley Sklar</a
+              >.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="JS/script.js"></script>
+</html>

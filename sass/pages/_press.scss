@@ -1,0 +1,18 @@
+.section-press {
+	padding: 5.5rem 0 15rem 0;
+}
+
+.press {
+	&__post {
+		text-align: center;
+
+		&--img {
+			width: 50%;
+			box-shadow: 0px 0px 50px $color-grey-dark-2;
+
+			@include respond(phone) {
+				width: 35rem;
+			}
+		}
+	}
+}

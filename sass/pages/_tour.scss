@@ -1,0 +1,58 @@
+.section-tour {
+	// background-color: $color-grey-light-1;
+	padding: 5.5rem 0 15rem 0;
+	// margin-top: -20vh;
+
+	@include respond(tab-port) {
+		padding: 12rem 0;
+	}
+}
+
+.tour-table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 2rem 0 4rem 0;
+	font-size: 1.3rem;
+	box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+	border-radius: 2px;
+
+	&__head,
+	&__foot {
+		background-color: $color-red;
+		color: $color-white;
+		text-shadow: 0px 1px 2px $color-black;
+	}
+
+	&__body {
+		&:hover {
+			transition: all 2s;
+		}
+	}
+
+	&__row {
+		&:hover {
+			background-color: $color-yellow;
+			color: $color-black;
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+			transform: scale(1.05);
+		}
+	}
+
+	&__head-item,
+	&__data-item {
+		border: 1px solid #999;
+		padding: 0.25rem;
+	}
+
+	&__link {
+		text-decoration: none;
+		animation: glow 2s linear infinite;
+		color: $color-red;
+	}
+}
+
+@keyframes glow {
+	50% {
+		color: $color-black;
+	}
+}
